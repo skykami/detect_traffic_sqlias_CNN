@@ -1,0 +1,20 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2018-07-10-15-48-19
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1522221802.768901	CYuCUr0z2DbAQ1Aw4	fe80::6513:6b1c:f4d4:50c6	62954	ff02::1:3	5355	udp	60421	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1522221803.177659	CYuCUr0z2DbAQ1Aw4	fe80::6513:6b1c:f4d4:50c6	62954	ff02::1:3	5355	udp	60421	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1522221802.768997	CNMIeF2zZAFDKnlEEf	192.168.1.41	62954	224.0.0.252	5355	udp	60421	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1522221803.179078	CNMIeF2zZAFDKnlEEf	192.168.1.41	62954	224.0.0.252	5355	udp	60421	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1522221814.569896	Csbv4Y3EtGzXkxot95	192.168.1.55	5353	224.0.0.251	5353	udp	0	6.905521	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	desktop-9lbqps5.local,desktop-9lbqps5.local,192.168.1.55,fe80::2946:dc35:ad22:9d90	120.000000,120.000000,120.000000,120.000000	F
+1522221802.767895	CsXHSg4zNH5yQsqTBb	192.168.1.41	137	192.168.1.255	137	udp	37994	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1522221803.518234	CsXHSg4zNH5yQsqTBb	192.168.1.41	137	192.168.1.255	137	udp	37994	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1522221804.269079	CsXHSg4zNH5yQsqTBb	192.168.1.41	137	192.168.1.255	137	udp	37994	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1522221819.934369	ChkCunakttrpz5Smb	fe80::a00:27ff:fe43:2ad0	5353	ff02::fb	5353	udp	0	-	_ipps._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1522221819.934494	CN26WW2blGucJWyvV8	192.168.1.82	5353	224.0.0.251	5353	udp	0	-	_ipps._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1522221867.354759	CviQHO3KUSOyFrByEi	192.168.1.48	5353	224.0.0.251	5353	udp	0	-	529005bd._sub._apple-mobdev2._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+#close	2018-07-10-15-48-19
