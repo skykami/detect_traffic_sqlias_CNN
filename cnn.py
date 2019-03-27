@@ -5,6 +5,7 @@ from math import ceil
 from data_preprocessing import batch_generator, data_generator
 from keras.regularizers import l2
 from keras.callbacks import TensorBoard, ModelCheckpoint
+import keras_metrics
 
 from keras.layers import Dense, Dropout, Convolution1D, Flatten, MaxPool1D
 
@@ -71,7 +72,7 @@ def train_cnn():
     model = CNN.build(input_shape=INPUT_SHAPE, classes=2)
 
     model.compile(loss="categorical_crossentropy", optimizer=OPTIMIZER,
-                  metrics=["accuracy"])
+                  metrics=["accuracy", keras_metrics.precision(), keras_metrics.recall()])
 
     call = TensorBoard(log_dir=log_dir + "cnn", write_grads=True)
     checkpoint = ModelCheckpoint(filepath='bestcnn', monitor='val_acc', mode='auto', save_best_only='True')

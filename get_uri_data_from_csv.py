@@ -9,8 +9,8 @@ current_row = 0
 
 path = './bro_logs/http.csv'
 
-sql_file = './data/sql_data.txt'
-normal_file = './data/normal_data.txt'
+sql_file = './data/real_sql.txt'
+normal_file = './data/real_normal.txt'
 
 
 #逐行写入数据（特征+标记）
